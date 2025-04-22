@@ -18,8 +18,8 @@ __all__ = [
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # Initialize T5 model and tokenizer from Hugging Face
-hf_model = T5ForConditionalGeneration.from_pretrained("google/umt5-xxl").to(device)
-hf_tokenizer = T5Tokenizer.from_pretrained("google/umt5-xxl")
+hf_model = T5ForConditionalGeneration.from_pretrained("google/umt5-small").to(device)
+hf_tokenizer = T5Tokenizer.from_pretrained("google/umt5-small")
 
 def fp16_clamp(x):
     if x.dtype == torch.float16 and torch.isinf(x).any():

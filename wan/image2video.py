@@ -26,7 +26,7 @@ from .utils.fm_solvers import (FlowDPMSolverMultistepScheduler,
 from .utils.fm_solvers_unipc import FlowUniPCMultistepScheduler
 
 
-class WanI2V:
+class WanI2V: 
 
     def __init__(
         self,
